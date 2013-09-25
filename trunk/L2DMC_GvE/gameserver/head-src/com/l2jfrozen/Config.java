@@ -2398,6 +2398,7 @@ public final class Config
 	public static String FARM2_CUSTOM_MESSAGE;
 	public static String PVP1_CUSTOM_MESSAGE;
 	public static String PVP2_CUSTOM_MESSAGE;
+	public static boolean SHOW_NPC_CREST;
 
 	//============================================================
 	public static void loadL2JFrozenConfig()
@@ -2517,6 +2518,7 @@ public final class Config
 			FARM2_CUSTOM_MESSAGE = L2JFrozenSettings.getProperty("Farm2CustomMeesage", "You have been teleported to Farm Zone 2!");
 			PVP1_CUSTOM_MESSAGE = L2JFrozenSettings.getProperty("PvP1CustomMeesage", "You have been teleported to PvP Zone 1!");
 			PVP2_CUSTOM_MESSAGE = L2JFrozenSettings.getProperty("PvP2CustomMeesage", "You have been teleported to PvP Zone 2!");
+			SHOW_NPC_CREST = Boolean.parseBoolean(L2JFrozenSettings.getProperty("ShowNpcCrest", "False"));
 		}
 		catch(Exception e)
 		{
